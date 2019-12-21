@@ -93,6 +93,7 @@ def closest_intersection(input_file):
 
     return int(min(list(map(computeManhattanDistance, intxns))))
 
+
 def fewest_steps_intersection(input_file):
     if not input_file.endswith(".txt"):
         raise NameError(f"{input_file} is not a .txt file.")
