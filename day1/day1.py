@@ -2,28 +2,6 @@ import argparse
 
 
 def compute_fuel_req(input_file):
-    """
-    Given a .txt file of module masses, compute fuel requirement for each
-    module and the total fuel requirement for all modules. Fuel for a given
-    mass is computed according to the formula:
-
-            fuel = floor(mass / 3) - 2
-
-    Parameters
-    ----------
-        input_file: str
-            Path to .txt file containing module masses.
-
-    Returns
-    -------
-        fuel_req: int
-            Total amount of fuel required for all modules.
-
-    Raises
-    ------
-        NameError
-            If the inputted file is not a .txt file.
-    """
     if not input_file.endswith(".txt"):
         raise NameError(f"{input_file} is not a .txt file.")
 
@@ -36,37 +14,6 @@ def compute_fuel_req(input_file):
 
 
 def compute_fuel_req2(input_file):
-    """
-    Given a .txt file of module masses, compute fuel requirement for each
-    module and the total fuel requirement for all modules. Fuel for a given
-    mass is computed according to the formula:
-
-            fuel = floor(mass / 3) - 2
-
-    In addition, fuel now requires additional fuel. The required additional
-    fuel to handle the originally added fuel can be computed by the same
-    formula:
-
-            new_fuel = floor(fuel / 3) - 2
-
-    It is possible that the computed new_fuel is negative, which we just treat
-    as a requirement of 0 fuel, and stop adding any additional fuel.
-
-    Parameters
-    ----------
-        input_file: str
-            Path to .txt file containing module masses.
-
-    Returns
-    -------
-        fuel_req: int
-            Total amount of fuel required for all modules.
-
-    Raises
-    ------
-        NameError
-            If the inputted file is not a .txt file.
-    """
     if not input_file.endswith(".txt"):
         raise NameError(f"{input_file} is not a .txt file.")
 
