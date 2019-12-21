@@ -26,6 +26,7 @@ def compute_fuel_req(input_file):
     """
     if not input_file.endswith(".txt"):
         raise NameError(f"{input_file} is not a .txt file.")
+
     fuel_req = 0
     with open(input_file) as f:
         for l in f:
@@ -68,6 +69,7 @@ def compute_fuel_req2(input_file):
     """
     if not input_file.endswith(".txt"):
         raise NameError(f"{input_file} is not a .txt file.")
+
     total = 0
     with open(input_file) as f:
         for l in f:
