@@ -39,7 +39,7 @@ def noun_verb_pair(input_file):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "input_file", help="Input file for module masses."
+        "input_file", help="Input file for opcodes."
     )
     args = parser.parse_args()
     input_file = args.input_file
