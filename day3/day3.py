@@ -1,6 +1,4 @@
 import argparse
-import pdb
-import numpy as np
 
 
 def computeManhattanDistance(pt1):
