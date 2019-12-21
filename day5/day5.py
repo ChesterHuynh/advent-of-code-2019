@@ -156,7 +156,7 @@ def run_diagnostic2(input_file, input_val):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "input_file", help="Input file for module masses."
+        "input_file", help="Input file for opcodes."
     )
 
     args = parser.parse_args()
